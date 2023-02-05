@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Múltiplos Retornos</title>
+</head>
+<body>
+    <script>
+        var nota=19
+        var res=undefined
+
+        if(nota>=95) {
+            res='Aprovado com louvor!'
+        }else if(nota>=60) {
+            res='Aprovado!'
+        } else if(nota>=40) {
+            res='Recuperação!'
+        } else if(nota>=20){
+            res='Reprovado!'
+        } else {
+            res='Reprovado com louvor!'
+        }
+        document.write(res)
+
+        /*
+        if(nota>=0 && nota<=40) {
+            document.write('Reprovado!')
+        } else {
+            if(nota>40 && nota<=60) {
+                document.write('Recuperação!')
+            } else {
+                document.write('Aprovado!')
+            }
+        }
+        */
+    </script>
+</body>
+</html
