@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch - Case</title>
+</head>
+<body>
+    <script>
+        var pos, msg, pontos
+        pos
+        pontos=1111
+
+        if(pontos >= 1000) {
+            pos=1
+        } else if(pontos >= 800) {
+            pos=2
+        } else if(pontos >= 600) {
+            pos=3
+        } else {
+            pos=0
+        }
+
+        switch (pos) {
+            case 1:
+            msg='Primeiro lugar<br>Medalha de ouro!'
+                break
+            case 2:
+                msg='Segundo lugar<br>Medalha de prata!'
+                break
+            case 3:
+                msg='Terceiro lugar<br>Medalha de bronze!'
+                break
+            default:
+                msg='Não foi ao pódio!'
+        }
+
+        switch(pos) {
+            case 1:
+            case 2:
+            case 3:
+                msg+='<br>Subiu ao pódio!'
+                break
+            default:
+                msg+='<br>Não subiu ao pódio!'
+        }
+
+        document.write(msg)
+</script>
+</body>
+</html>
