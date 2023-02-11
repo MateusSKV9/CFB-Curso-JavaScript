@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array/Vetores</title>
+</head>
+<body>
+    <script>
+        var mochila=[], mochila1=[], mochila2=[], pos
+
+        mochila1.push('Faca')
+        mochila1.push('Corda')
+        mochila1.push('Pederneira')
+        mochila1.push('chave')
+        mochila1.push('Lanterna')
+        mochila1.push('Pedra')
+        mochila1.push('Mouse')
+
+        mochila2.push('Arame')
+        mochila2.push('Luvas')
+        mochila2.push('Canivete')
+        mochila2.push('Água')
+        mochila2.push('Chiclete')
+        mochila2.push('Pilhas')
+
+        mochila=mochila1.concat(mochila2) // Junta o conteúdo da variáveis(Array, nesse caso)
+
+        // mochila.length --> mostra o tamanho do array
+
+        document.write(`O tamanho da mochila 1:   ${mochila1.length} <br>`)
+        document.write(`O tamanho da mochila 2:  ${mochila2.length} <br>`)
+        document.write(`O tamanho do mochilão:   ${mochila.length} <br><br>`)
+
+        document.write(mochila[0]+'<br>')
+        document.write(mochila[1]+'<br>')
+        document.write(mochila[2]+'<br>')
+        document.write(mochila[3]+'<br>')
+        document.write(mochila[4]+'<br>')
+        document.write(mochila[5]+'<br>')
+        document.write(mochila[6]+'<br>')
+        document.write(mochila[7]+'<br>')
+        document.write(mochila[8]+'<br>')
+        document.write(mochila[9]+'<br>')
+        document.write(mochila[10]+'<br>')
+        document.write(mochila[11]+'<br>')
+
+        /*
+        pos=mochila.indexOf('Pedra')
+        if(pos<0) {
+            document.write('O item não está na mochila')
+        } else {
+            document.write('O item está na posição ' + pos)
+        }
+        */
+
+        /*
+        var num=[2,3,4,7,6,1,8,9,5,0]
+        num.sort() // Ordena o conteúdo
+        num.reverse() // Inverte a ordem do conteúdo
+
+        numeros=num.join(', ') // Divide o conteúdo do Array/Vetor
+        document.write(numeros+'<br>')
+        
+        document.write('<br>' + num[0]+'<br>')
+        document.write(num[1]+'<br>')
+        document.write(num[2]+'<br>')
+        document.write(num[3]+'<br>')
+        document.write(num[4]+'<br>')
+        document.write(num[5]+'<br>')
+        document.write(num[6]+'<br>')
+        document.write(num[7]+'<br>')
+        document.write(num[8]+'<br>')
+        document.write(num[9]+'<br>')
+        */
+    </script>
+</body>
+</html>
