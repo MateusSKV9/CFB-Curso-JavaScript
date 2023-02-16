@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHTML</title>
+</head>
+<body>
+    <p id="texto">
+        Aqui é um parágrafo! CFB Cursos
+    </p>
+    <input type="text" value="Mateus santos" name="cxtexto" id="cxtexto">
+    <div id="dv">
+        <hr>
+        Texto da DIV
+    </div>
+
+    <script>
+        // Para mudar o conteúdo de um parágrafo usa-se o InnerHTML
+        var ctx=document.getElementById('texto').innerHTML='Aula 24 - InnerHTML'
+        var tdv=document.getElementById('dv').innerHTML
+        alert(tdv)
+    </script>
+</body>
+</html>
