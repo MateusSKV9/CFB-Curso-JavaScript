@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando formulário</title>
+<style>
+    label, input {
+        display: block;
+    }
+
+    input[type=submit], label {
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+    <form action="#">
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" value="Primeiro - 1">
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" value="123">
+        <input type="submit" value="Enviar">
+        <hr>
+    </form>
+
+    <script>
+        document.write(document.getElementById('inome').elements[0].value)
+
+        var fm=document.forms[0]
+        var ele=fm.elements
+
+        for(var i=0; i < ele.length-1; i++) {
+            ele[i].style.backgroundColor='gray'
+        }
+
+        // ele[0].style.color='white'
+        // ele[0].value='Mateus'
+
+        //document.write(ele)
+    </script>
+</body>
+</html>

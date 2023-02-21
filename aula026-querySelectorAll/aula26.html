@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelectorByTagsName</title>
+    <style>
+        h1, h2, h3 {
+            color: red;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+
+        div.quadro {
+            background-color: gray;
+            width: 30vw;
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mateus Santos</h1>
+    <h2>JavaScript</h2>
+    <h3>CFB Cursos</h3>
+
+    <p>Isto é um parágrafo!</p>
+    <div class="quadro">
+        <h2>Título</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, nam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quibusdam praesentium, doloribus adipisci autem doloremque!</p>
+    </div>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <hr>
+
+    <script>
+        var elements=document.querySelectorAll("p, h1, h3")
+        for(var i=0; i < elements.length; i++) {
+            elements[i].style.color='lightblue'
+        }
+    </script>
+</body>
+</html>
